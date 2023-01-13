@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import News from "../News/News";
-import Chats from "../Chats/Chats";
+import Messenger from "../Messenger/Messenger";
 import Profile from "../Profile/Profile";
 
 const Page = () => {
@@ -10,7 +10,7 @@ const Page = () => {
 			<Routes>
 				<Route path="/" element={<News />}/>
 				<Route path="news" element={<News />}/>
-				<Route path="chats" element={<Chats />}/>
+				<Route path="chats" element={<Messenger />}/>
 				<Route path="profile" element={<Profile />}/>
 			</Routes>
 		</main>

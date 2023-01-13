@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Chats = () => {
+const Messenger = () => {
 	return (
 		<div>
 			Chats
@@ -8,4 +8,4 @@ const Chats = () => {
 	);
 };
 
-export default Chats;
+export default Messenger;
