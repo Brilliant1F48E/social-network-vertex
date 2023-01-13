@@ -2,8 +2,9 @@ import React from 'react';
 
 const Messenger = () => {
 	return (
-		<div>
-			Chats
+		<div className="messenger">
+			<ChatsList />
+			<Chat />
 		</div>
 	);
 };
