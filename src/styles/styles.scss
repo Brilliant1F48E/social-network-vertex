@@ -1,0 +1,33 @@
+@import "vars";
+@import "nullstyle";
+
+html,
+body{
+  min-height: 100%;
+}
+
+body{
+  background-color: $color-light-grey;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.page-wrapper{
+  padding-top: $header-height + $global-padding;
+  padding-left: $global-padding;
+  padding-right: $global-padding;
+}
+
+.sidebar{}
+.page{}
+
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}

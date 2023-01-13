@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter} from "react-router-dom";
+import Header from "./componets/Header/Header";
+import Sidebar from "./componets/Sidebar/Sidebar";
+import Page from "./componets/Page/Page";
+import "./styles/styles.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+	return (
+		<div className="app">
+			<BrowserRouter>
+				<Header/>
+				<div className="page-wrapper">
+					<Sidebar/>
+					<Page />
+				</div>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

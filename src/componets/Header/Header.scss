@@ -1,0 +1,15 @@
+@import "../../styles/vars.scss";
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $header-height;
+  width: 100%;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  padding-right: $global-padding;
+  padding-left: $global-padding;
+}
